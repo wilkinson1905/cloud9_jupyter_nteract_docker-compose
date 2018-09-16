@@ -1,0 +1,7 @@
+Host jupyter
+  HostName cloud9_jupyter_1 
+  Port 22
+Host nteract
+  HostName cloud9_nteract_1 
+  Port 22
+  ServerAliveInterval 60 

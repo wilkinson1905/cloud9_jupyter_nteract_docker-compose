@@ -1,7 +1,7 @@
 version: '2.3'
 services:
     cloud9:
-        image: eeacms/cloud9
+        build: cloud9/
         volumes:
             - ./ssh:/root/.ssh
             - /workspace:/cloud9/workspace
