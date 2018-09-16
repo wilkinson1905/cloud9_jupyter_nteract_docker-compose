@@ -1,0 +1,3 @@
+PermitEmptyPasswords yes
+PasswordAuthentication yes
+UsePAM no
