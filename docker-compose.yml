@@ -7,7 +7,7 @@ services:
             - /workspace:/cloud9/workspace
         ports:
             - "127.0.0.1:8000:8080"
-    anaconda:
+    jupyter:
         build: jupyter/
         volumes:
             - ./ssh:/root/.ssh

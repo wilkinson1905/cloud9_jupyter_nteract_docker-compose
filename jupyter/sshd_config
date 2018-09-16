@@ -1,3 +1,4 @@
 PermitEmptyPasswords yes
 PasswordAuthentication yes
+PermitRootLogin yes
 UsePAM no
