@@ -1,0 +1,20 @@
+version: '2.3'
+services:
+    cloud9:
+        image: eeacms/cloud9
+        volumes:
+            - /workspace:/cloud9/workspace
+        ports:
+            - "8000:8080"
+    anaconda:
+        build: jupyter/
+        volumes:
+            - /workspace:/workspace
+        ports:
+            - "8100:8888"
+    nteract:
+        build: nteract/
+        volumes:
+            - /workspace:/workspace
+        ports:
+            - "8200:8888"
