@@ -1,4 +1,4 @@
-FROM continuumio/anaconda3
+FROM okwrtdsh/anaconda3:9.2-cudnn7
 RUN apt-get update \
   && apt-get install -y openssh-server \
     && rm -rf /var/lib/apt/lists/*
