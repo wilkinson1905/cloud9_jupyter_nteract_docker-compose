@@ -1,4 +1,4 @@
-# cloud9_jupyter_nteract_docker-compose
+# cloud9_jupyter_nteract_docker-compose for gpu
 cloud9とjupyter labとnetflixが作成しているjupyter notebookであるnteractの3つのコンテナを作成するdocker-compose.ymlです．  
 localhostからのみアクセスできるので，リモートから使う場合はsshのポートフォワーディングを使用してください．  
 また，cloud9のシェルからsshでjupyterコンテナやnteractコンテナにアクセスできます．ssh jupyter や ssh nteract でアクセス可能です． 
