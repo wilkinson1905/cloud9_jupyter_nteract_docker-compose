@@ -2,6 +2,7 @@ FROM okwrtdsh/anaconda3:9.2-cudnn7
 RUN apt-get update \
   && apt-get install -y openssh-server \
     && rm -rf /var/lib/apt/lists/*
+RUN conda install -y -c conda-forge jupyter_contrib_nbextensions
 RUN passwd -d root
 COPY sshd_config /etc/ssh/sshd_config
 COPY startup.sh /root/startup.sh
